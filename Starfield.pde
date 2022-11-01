@@ -1,20 +1,24 @@
 //your code here
 void setup()
 {
-	//your code here
+ size(400,400);
 }
 void draw()
 {
-	//your code here
+  //your code here
 }
 class Particle
 {
-	//your code here
+  int myColor, mySpeed;
+  double myX, myY, myAngle;
+  Particle(){
+    myX = 200;
+    myY = 200;
+    myColor = 255;
+  }
 }
 
-class OddballParticle //inherits from Particle
+class OddballParticle extends Particle
 {
-	//your code here
+  //your code here
 }
-
-
