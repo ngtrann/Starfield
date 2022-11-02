@@ -5,12 +5,13 @@ void setup()
 {
   size(400,400);
   frameRate(25);
-  ripple = new Particle[400];
+  ripple = new Particle[700];
   bub = new OddballParticle();
   for(int i = 0; i < ripple.length; i++){
     ripple[i] = new Particle();
     ripple[0] = new OddballParticle();
     ripple[1] = new OddballParticle();
+    ripple[5] = new OddballParticle();
   }
   
 }
@@ -31,7 +32,7 @@ class Particle
     myX = 200;
     myY = 200;
     myAngle = (Math.random()*3)*Math.PI;
-    mySpeed = (int)(Math.random()*5)+1;
+    mySpeed = (int)(Math.random()*7)+1;
     myColor = 255;
     myOpac = (int)(Math.random()*60)+60;
   }
